@@ -1,6 +1,7 @@
 % arara: pdflatex
-\documentclass[11pt]{article}
-
+\documentclass[10pt,twoside]{article}
+\usepackage[a5paper,twoside,inner=2.6cm,outer=2.7cm,
+            top=1.5cm,headsep=0.5cm]{geometry}
 \usepackage{parskip}
 \usepackage{kpfonts}
 \usepackage{wrapfig}
@@ -8,12 +9,19 @@
 \usepackage{microtype}
 \usepackage{titlesec}
 \usepackage{tikz}
+\usepackage{fancyhdr}
+\usepackage{tcolorbox}
 \usetikzlibrary{trees}
+
+% page style
+\fancyhf{} % delete current header and footer
+\fancyhead[LE,RO]{\bfseries\thepage}
+\pagestyle{fancy}
 
 % fix this command
 \newcommand{\fixthis}[1]
 {%
-	\marginpar{\huge  {\framebox{FIX}}}%
+\llap{\huge{\color{red}\framebox{FIX}}}%
 	\typeout{FIXTHIS: p\thepage : #1^^J}%
 }
 
@@ -23,17 +31,27 @@
 % custom paragraph heading
 \titleformat{\paragraph}[leftmargin]
 {\normalfont
-\bfseries\filleft}
+\bfseries\small\filleft}
 {}
 {0pt}
 {}
 \titlespacing{\paragraph}{4pc}{1.5ex plus .1ex minus .2ex}{1pc}
 
 % title stuff
-\title{E. M. Hughes}
-\author{Hughes family}
 \begin{document}
 
-\maketitle
+\thispagestyle{plain}
+
+\begin{tcolorbox}
+\centering  
+{\huge\bfseries E. M. Hughes}
+
+\includegraphics[width=\textwidth]{grandadSummer2008}
+
+\centering
+\large 21st March 1925--28th August 2014
+\end{tcolorbox}
+
+
 \input{grandad}
 \end{document}

@@ -7,7 +7,6 @@
 	miss him dearly; we hope that this memoir will help to highlight some of his many achievements, and the
 various chapters of his life.}
 
-
 \paragraph{March 21st 1925} Grandad was born in Balham, London.
 \paragraph{1928} Grandad moved out to Ash Road in Morden with his parents where his Dad was working on the telephone exchange;
 Grandad remembers the advert said, 'Come and live in rural Surrey'; the lifestyle and commute was facilitated
@@ -77,7 +76,7 @@ infested with weevils, so they would have to go through it and pick them out.
 
 \begin{wrapfigure}{R}{5cm}
 	\centering
-	\rotatebox{-90}{\includegraphics[width=.7\textwidth]{squadron104}}
+	\rotatebox{-90}{\includegraphics[width=.6\textwidth]{squadron104}}
 \end{wrapfigure}
 On one occasion in South Africa, Grandad went to the cinema; at the end of the film
 the (British) National anthem was played (as was the tradition at this time), and several of the
@@ -179,19 +178,16 @@ who knew and loved him, and remembered dearly as a man who approached life with 
 towards life.
 
 \begin{tikzpicture}[
-		man/.style={rectangle,draw,fill=blue!20},
-		woman/.style={rectangle,draw,fill=red!20,rounded corners=.8ex},
+		man/.style={minimum height=.75cm,rectangle,draw,fill=blue!20},
+		woman/.style={minimum height=.75cm,rectangle,draw,fill=red!20,rounded corners=.8ex},
 		grandchild/.style={grow=down,xshift=1em,anchor=west,
 			edge from parent path={(\tikzparentnode.south) |- (\tikzchildnode.west)}},
-		first/.style={level distance=6ex},
-		second/.style={level distance=12ex},
 		level 1/.style={sibling distance=15em},
-		level 2/.style={sibling distance=1em},
+		level 2/.style={sibling distance=-5em},
 		level 3/.style={sibling distance=6em},
          first/.style={level distance=6ex},
            second/.style={level distance=12ex},
              third/.style={level distance=18ex},
-		third/.style={level distance=18ex},
 		%level 1/.style={sibling distance=10em}]
 	]
 	% Parents
@@ -200,9 +196,8 @@ towards life.
 	child[grow=right] {node[woman,anchor=west]{Sally Constance Cuming}}
 	child[grow=down,level distance=0ex]
 	[edge from parent fork down]
-	% Children and grandchildren
 	child{
-		node[man] {(Edward) Michael Hughes}
+		node[man] {(Edward) Michael}
 		child[grow=right,xshift=2cm]{node[woman] {Pat Jewitt}}
 		child {
 			node[man]{Richard}
@@ -216,8 +211,8 @@ towards life.
 		}
 	}
 	child {node[woman]{Pamela}
-		child[grow=right,xshift=2cm]{node[man] {Keith Beard}}
+		child[grow=right,xshift=1cm]{node[man] {Keith Beard}}
 		child {node[man]{Anthony}}
-		child[xshift=2cm] {node[woman]{Hilary}}};
+		child[xshift=4cm] {node[woman]{Hilary}}};
 \end{tikzpicture}
 \end{document}
