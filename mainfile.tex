@@ -1,0 +1,37 @@
+% arara: pdflatex
+\documentclass[11pt]{article}
+
+\usepackage{parskip}
+\usepackage{kpfonts}
+\usepackage{wrapfig}
+\usepackage{graphicx}
+\usepackage{microtype}
+\usepackage{titlesec}
+
+% fix this command
+\newcommand{\fixthis}[1]
+{%
+	\marginpar{\huge  {\framebox{FIX}}}%
+	\typeout{FIXTHIS: p\thepage : #1^^J}%
+}
+
+% graphics path
+\graphicspath{{./images/}}
+
+% custom paragraph heading
+\titleformat{\paragraph}[leftmargin]
+{\normalfont
+\bfseries\filleft}
+{}
+{0pt}
+{}
+\titlespacing{\paragraph}{4pc}{1.5ex plus .1ex minus .2ex}{1pc}
+
+% title stuff
+\title{E. M. Hughes}
+\author{Hughes family}
+\begin{document}
+
+\maketitle
+\input{grandad}
+\end{document}

@@ -1,39 +1,3 @@
-% arara: pdflatex
-\documentclass[11pt]{article}
-
-\usepackage{parskip}
-\usepackage{kpfonts}
-\usepackage{wrapfig}
-\usepackage{graphicx}
-\usepackage{microtype}
-\usepackage{titlesec}
-
-% fix this command
-\newcommand{\fixthis}[1]
-{%
-	\marginpar{\huge  {\framebox{FIX}}}%
-	\typeout{FIXTHIS: p\thepage : #1^^J}%
-}
-
-% graphics path
-\graphicspath{{./images/}}
-
-% custom paragraph heading
-\titleformat{\paragraph}[leftmargin]
-{\normalfont
-\bfseries\filleft}
-{}
-{0pt}
-{}
-\titlespacing{\paragraph}{4pc}{1.5ex plus .1ex minus .2ex}{1pc}
-
-% title stuff
-\title{E. M. Hughes}
-\author{Hughes family}
-\begin{document}
-
-\maketitle
-
 {\itshape This document describes the life of (Edward) Michael Hughes (Grandad). It was 
 originally written with great affection by his eldest grandson, Chris, based on a few discussions in late 2013; after 
 his death, further additions were made by the rest of Grandad's family, most notably by his son, Richard. Most folks that read this 
@@ -211,4 +175,3 @@ a place to raise a family in her own place.
   \paragraph{August 28th, 2014} Grandad died peacefully in his sleep in his favourite chair at 4 South Lane, Southbourne; he will be missed by all of those
   who knew and loved him, and remembered dearly as a man who approached life with a wonderful attitude
   towards life.
-\end{document}
