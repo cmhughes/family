@@ -1,8 +1,8 @@
-% arara: pdflatex: {files: [mainfile]}
-% !arara: indent: {overwrite: true}
+% !arara: pdflatex: {files: [mainfile]}
+% arara: indent: {overwrite: true}
 {\itshape This document describes the life of (Edward) Michael Hughes (Grandad). It was
 	originally written with great affection by his eldest grandson, Chris, based on a few discussions in late 2013; after
-	his death, further additions were made by the rest of Grandad's family, most notably by his son, Richard. Most folks that read this
+	his death, further additions were made by the rest of Grandad's family. Most folks that read this
 	document would probably have known Grandad as `Mike' or `Michael'. We all remember him very fondly, and will
 	miss him dearly; we hope that this memoir will help to highlight some of his many achievements, and the
 various chapters of his life.}
@@ -26,7 +26,7 @@ Dad said, 'Come on Michael, let's run for it'.
 
 \paragraph{1930} Grandad met Ron, who would be his life-long best friend, at primary
 school---the teacher asked Grandad to sit next to Ronny Lewis. Grandad and Ron were key members
-of a gang that shared many similarities with the outlaws from `Just William', by Richal Compton.
+of a gang that shared many similarities with the outlaws from `Just William', by Richmal Compton.
 
 \paragraph{1933} Grandad was a boy scout around this time; he progressed to patrol leader of the Peanut
 patrol, and recalled reciting, `Dib, dib, dib, dob, dob, dob'.
@@ -36,9 +36,9 @@ was rejected as he did not have his father's written permission.
 \paragraph{1943-1947} Now aged eighteen, and not needing permission, Grandad reapplied to the RAF.
 There was no national service---soldiers were simply called up for the `the present
 emergency'.
-\begin{wrapfigure}{R}{5cm}
+\begin{wrapfigure}{R}{.4\textwidth}
 	\centering
-	\rotatebox{-90}{\includegraphics[width=.7\textwidth]{portrait}}
+	\rotatebox{-90}{\includegraphics[width=.9\textwidth]{portrait}}
 \end{wrapfigure}
 Grandad reported to the recruit center in central London (near Lord's cricket ground);
 marched up the road to a nice block of flats opposite Regent's Park with London Zoo.
@@ -74,9 +74,9 @@ sea, so by and large he didn't feel sick. The food on the troop ship was quite g
 to what the folks at home were getting---the bread was baked fresh every day but the flour was
 infested with weevils, so they would have to go through it and pick them out.
 
-\begin{wrapfigure}{R}{5cm}
+\begin{wrapfigure}[14]{R}{5cm}
 	\centering
-	\rotatebox{-90}{\includegraphics[width=.6\textwidth]{squadron104}}
+	\rotatebox{-90}{\includegraphics[width=.6\textwidth]{squadron104badge}}
 \end{wrapfigure}
 On one occasion in South Africa, Grandad went to the cinema; at the end of the film
 the (British) National anthem was played (as was the tradition at this time), and several of the
@@ -98,6 +98,11 @@ and materials to Serbia. Their drop site would
 be marked in a field with a big white `X', and they would fly over at about 1000ft, and push
 the parachute-prepared crates out. They often watched people emerge from the woods with carts,
 who would then collect the supplies, and disperse.
+
+\begin{wrapfigure}[17]{R}{.5\textwidth}
+	\centering
+	\includegraphics[width=.7\textwidth]{squadron104}
+\end{wrapfigure}
 The night-time missions were to bomb railway stations in various small towns in Serbia and northern Italy (Verona),
 as the Germans were using them to bring in supplies. One place outside Verona had a movable bridge---the
 intelligence had not reported that the bridge could move, which resulted in 104 squadron dropping bombs into
@@ -110,9 +115,9 @@ During this time, a
 representative from the civil service spoke to the soldiers about opportunities once their
 service had finished. Grandad took the exam, and was offered the job. Each soldier was given
 a number, and told to wait until their number came up.
-\begin{wrapfigure}{R}{5cm}
+\begin{wrapfigure}{R}{.5\textwidth}
 	\centering
-	\rotatebox{-90}{\includegraphics[width=.25\textwidth]{liberator}}
+	\rotatebox{-90}{\includegraphics[width=.4\textwidth]{liberator}}
 \end{wrapfigure}
 
 Grandad and Ron arranged to meet during his time in Egypt. Ron had a job
@@ -160,6 +165,11 @@ given a set of steps to exit and enter the vehicle---they had been `de-mobbed' (
 \paragraph{1952} Grandad met Granny Hat, joined the revenue and worked in an office
 in the west end of London; the building has since been demolished, and in its stead
 stands the new Scotland Yard.
+
+\begin{wrapfigure}[9]{R}{.5\textwidth}
+	\centering
+	\includegraphics[width=.7\textwidth,trim={0 13cm 0 2cm},clip]{grannyHatAndGrandad}
+\end{wrapfigure}
 Grandad used to have work-hosted Christmas parties at an old pub called, `The Feathers', which still stands by its side.
 It was at one such party that Grandad introduced Granny Hat to his colleagues---one woman
 assumed that she was his sister.
@@ -173,46 +183,70 @@ a place to raise a family in her own place.
 \paragraph{1988} Grandad and Granny Hat Moved to Southbourne to be closer to the family. Grandad
 has lived in Southbourne longer than anywhere else since he was de-mobbed.
 
-\paragraph{August 28th, 2014} Grandad died peacefully in his sleep in his favourite chair at 4 South Lane, Southbourne; he will be missed by all of those
-who knew and loved him, and remembered dearly as a man who approached life with a wonderful attitude
-towards life.
+\paragraph{1993} Grandad and Granny Hat celebrated their 40th wedding anniversary
+at \fixthis{need location} in Hampshire.
 
-\begin{tikzpicture}[
-		man/.style={minimum height=.75cm,rectangle,draw,fill=blue!20},
-		woman/.style={minimum height=.75cm,rectangle,draw,fill=red!20,rounded corners=.8ex},
-		grandchild/.style={grow=down,xshift=1em,anchor=west,
-			edge from parent path={(\tikzparentnode.south) |- (\tikzchildnode.west)}},
-		level 1/.style={sibling distance=15em},
-		level 2/.style={sibling distance=-5em},
-		level 3/.style={sibling distance=6em},
-         first/.style={level distance=6ex},
-           second/.style={level distance=12ex},
-             third/.style={level distance=18ex},
-		%level 1/.style={sibling distance=10em}]
-	]
-	% Parents
-	\coordinate
-	child[grow=left] {node[man,anchor=east]{Gabriel Edward Hughes}}
-	child[grow=right] {node[woman,anchor=west]{Sally Constance Cuming}}
-	child[grow=down,level distance=0ex]
-	[edge from parent fork down]
-	child{
-		node[man] {(Edward) Michael}
-		child[grow=right,xshift=2cm]{node[woman] {Pat Jewitt}}
-		child {
-			node[man]{Richard}
-			child[grow=right,xshift=1cm] {node[woman]{Theresa Lyons}}
-			child[grandchild,first] {
-                node[man]{Chris}
-			    child[grow=right,xshift=.5cm] {node[woman]{Marisa Moon}}
-                }
-			child[grandchild,second] {node[man]{David}}
-			child[grandchild,third]{node[woman]{Katie}}
+\begin{wrapfigure}{R}{.5\textwidth}
+	\centering
+	\includegraphics[width=.7\textwidth,trim={4cm 2cm 5.5cm 15cm},clip]{grannyHatAndGrandad}
+\end{wrapfigure}
+They were surrounded by friends and family, who joined them in celebrating their
+marraige.
+
+\paragraph{August 28th, 2014} Grandad died peacefully in his sleep in his favourite chair at 4 South Lane, Southbourne; he will be missed by all of those
+who knew and loved him, and remembered dearly as a man who approached life with a wonderful attitude.
+
+\clearpage
+
+\rotatebox{90}{%
+	\begin{tikzpicture}[
+			man/.style={minimum height=.75cm,rectangle,draw,fill=blue!20},
+			woman/.style={minimum height=.75cm,rectangle,draw,fill=red!20,rounded corners=.8ex},
+			grandchild/.style={grow=down,xshift=1em,anchor=west,
+				edge from parent path={(\tikzparentnode.south) |- (\tikzchildnode.west)}},
+			grandchild spouse/.style={grow=right,anchor=west,
+				edge from parent path={(\tikzparentnode.east) |- (\tikzchildnode.west)}},
+			level 1/.style={sibling distance=15em},
+			level 2/.style={sibling distance=-5em},
+			level 3/.style={sibling distance=6em},
+			first/.style={level distance=10ex},
+			second/.style={level distance=16ex},
+			third/.style={level distance=22ex},
+			%level 1/.style={sibling distance=10em}]
+		]
+		% Parents
+		\coordinate
+		child[grow=left] {node[man,anchor=east]{Gabriel Edward Hughes}}
+		child[grow=right] {node[woman,anchor=west]{Sally Constance Cuming}}
+		child[grow=down,level distance=0ex]
+		[edge from parent fork down]
+		child{
+			node[man] {(Edward) Michael}
+			child[grow=right,xshift=2cm]{node[woman] {Pat Jewitt}}
+			child {
+				node[man]{Richard}
+				child[grow=right,xshift=1cm] {node[woman]{Theresa Lyons}}
+				child[grandchild,first] {
+					node[man]{Chris}
+					child[grandchild spouse] {node[woman]{Marisa Moon}}
+				}
+				child[grandchild,second] {node[man]{David}}
+				child[grandchild,third]{node[woman]{Katie}}
+			}
 		}
-	}
-	child {node[woman]{Pamela}
-		child[grow=right,xshift=1cm]{node[man] {Keith Beard}}
-		child {node[man]{Anthony}}
-		child[xshift=4cm] {node[woman]{Hilary}}};
-\end{tikzpicture}
-\end{document}
+		child {node[woman]{Pamela}
+			child[grow=right,xshift=1cm]{node[man] {Keith Beard}}
+			child {node[man]{Anthony}
+				child[grow=right,xshift=1cm] {node[woman]{Claire ??}}
+				child[grandchild,first] {node[woman]{Sarah}}
+				child[grandchild,second]{node[woman]{Kathryn}}
+			}
+			child[xshift=6cm] {
+				node[woman]{Hilary}
+				child[grow=right,xshift=1cm] {node[man]{Mike ??}}
+				child[grandchild,first] {node[man]{Paul}}
+				child[grandchild,second]{node[woman]{Cara}}
+			}
+		};
+	\end{tikzpicture}
+}
